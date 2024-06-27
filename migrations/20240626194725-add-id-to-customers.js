@@ -19,9 +19,14 @@ module.exports = {
       allowNull: false,
       unique: true, // Ensure email is unique
     });
+
+    
   },
 
   down: async (queryInterface, Sequelize) => {
+
+     
+
     // Remove the `id` column
     await queryInterface.removeColumn('customers', 'id');
 

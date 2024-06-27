@@ -11,7 +11,7 @@ const getController=async(req,res)=>{
         })
     }
     catch(error){
-        console.error("Error in customerController:", error);
+        console.error("Error in getController:", error);
         return res.status(500).json({ message: "Internal Server Error" });
     }
 
